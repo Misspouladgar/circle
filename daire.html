@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="radius1">
+    =
+    <p id="result"></p>
+    <button onclick="calculateradius()">calculate</button>
+    <script>
+        function calculateradius(){
+            var intradius= document.getElementById("radius1").value;
+            var area = intradius * intradius*3.14;
+            document.getElementById("result").innerHTML=area;
+        }
+    </script>
+</body>
+</html>
